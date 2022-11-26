@@ -1,4 +1,6 @@
-
+body {
+    background-color: blueviolet;
+}
 #container {
     display: flex;
     flex-flow: wrap;
@@ -16,4 +18,12 @@
     margin: 10px;
     padding: 20px;
     background-color: #fff;
+}
+
+.makeRed {
+    background-attachment: red;
+}
+
+.makeBlue {
+    background-color: blue;
 }
