@@ -33,6 +33,7 @@ body {
     flex: auto;
 }
 
+
 .bg-lightblue {
     background-color: lightblue;
 }
@@ -49,3 +50,4 @@ body {
     padding: 5px;
     color: white;
 }
+
