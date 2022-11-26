@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vegi-Tables</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+  <script type="text/javascript" src="js/my_script.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Vegi-Tables</h2>
+      <ul>
+        <li id="stream1_btn">
+          Stream 1
+        </li>
+        <li id="stream2_btn">
+          Stream 2
+        </li>
+        <li id="stream3_btn">
+          Stream 3
+        </li>
+      </ul>
+  </header>
+  <table>
+    <tr>
+      <th></th>
+      <th>Country</th>
+      <th>Price</th>
+      <th>Nutrition</th>
+      <th>Category</th>
+    </tr>
+    <tr>
+      <th>Spinach</th>
+      <td>America</td>
+      <td>28</td>
+      <td>90</td>
+      <td>Veg</td>
+    </tr>
+    <tr>
+      <th>Carrots</th>
+      <td>France</td>
+      <td>56</td>
+      <td>75</td>
+      <td>Veg</td>
+    </tr>
+  </table>
+  <div class="container">
+    <p id="question">
+      Are you ready to test your knowledge? Make your choice and press the button 'Agree' if
+      you think the statement is true or 'Disagree' if you think it is not a true one. Let's START!
+    </p>
+    <div id="button-area">
+      <input class="button" id="start-button" type="submit" value="Start">
+    </div>
+  </div>
+
+  <p>
+    Click this paragraph to see it fade.
+    </p>
+     
+    <p>
+    Compare to this one that won't fade.
+    </p>
+     
+    <script>
+    $( "p" ).first().click(function() {
+      $( this ).fadeTo( "slow", 0.33 );
+    });
+    </script>
+     
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script src="js/myscript.js"></script>
+</body>
+
+</html>
