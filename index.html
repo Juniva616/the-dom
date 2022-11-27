@@ -4,39 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link type="text/css" rel="stylesheet" href="css/style1.css">
-    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
-    <script type="text/javascript" src="js/my_script1.js"></script>
-    <title>Title</title>
+    <title>API and fetch()</title>
 </head>
 
 <body>
-    <div id="container">
-        <div class="card">
-            <button>Button One</Button>
-        
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum at libero itaque?
-            Maiores, ex asperiores recusandae repellendus optio odit quo, fugit fuga deleniti
-            nostrum in dolor enim nam necessitatibus tempore.
-        </p>
-        </div>
-        <div class="card">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum at libero itaque?
-                Maiores, ex asperiores recusandae repellendus optio odit quo, fugit fuga deleniti
-                nostrum in dolor enim nam necessitatibus tempore.
-            </p>    
-                <div>
-                    <button>Button Two</Button>
-                </div>
-            
-        </div>
+    <div id="content">
+
     </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script>
+        fetch("https://ci-swapi.herokuapp.com/api/")
+            .then(response => response.text())
+            .then(data => displayData(data)) 
+            .catch((e) => {
+                console.error("Error: ", e);
+            })
+            
+        function displayData(data) {
+            document.getElementById("content").innerText = data;
+        }    
+    </script>
 </body>
 
 </html>
